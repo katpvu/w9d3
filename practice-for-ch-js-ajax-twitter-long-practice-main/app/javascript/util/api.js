@@ -8,3 +8,5 @@ async function customFetch(url, options = {}) {
 
   return await fetch(url, options);
 }
+
+export const foo = "bar";

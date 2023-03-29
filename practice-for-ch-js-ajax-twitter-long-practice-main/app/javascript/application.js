@@ -10,7 +10,7 @@ if (process.env.NODE_ENV !== "production") {
   window.API = API;
 }
 
-let followToggleSelector = "";
+let followToggleSelector = ".follow-toggle";
 let infiniteTweetsSelector = "";
 let usersSearchSelector = "";
 let tweetComposeSelector = "";
@@ -18,7 +18,9 @@ let followersSelector = "";
 
 
 document.querySelectorAll(followToggleSelector).forEach((el) => {
+  console.log(el,"el");
   new FollowToggle(el);
+  console.log(el,"el");
 });
 
 document.querySelectorAll(infiniteTweetsSelector).forEach((el) => {
